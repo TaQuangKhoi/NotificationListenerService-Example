@@ -1,12 +1,12 @@
 NotificationListenerService-Example
 ===================================
 
-##Introduction
+## Introduction
 NotificationListenerService is introduced in Android 4.3 (API 18). It allows an application to receive information about notifications as it creates or removes. NotificationListenerService class is derived from the Service class. It has two abstract methods namely 1. onNotificationPosted 2. onNotificationRemoved.  
 To use NotificationListenerService, we need to create a java file which extends NotificationListenerService and implement two callback methods. Both methods have a parameter named "sbn", which is an object of StatusBarNotification class. StatusBarNotification provides necessary information about Notifications.
 NotificationListenerService provides facility to fetch active notifications using getActiveNotifications and also provides a feature to remove notifications using cancelAllNotifications.
 
-##Useful Methods
+## Useful Methods
 1. NotificationListenerService
 	* onNotificationPosted
 	* onNotificationRemoved
@@ -18,7 +18,7 @@ NotificationListenerService provides facility to fetch active notifications usin
 	* isClearable
 	* isOngoing
 
-##Note
+## Note
 User require to enable notification permission from "Settings > Security > Notification access".
 
 ![Mou icon](http://1.bp.blogspot.com/-7Q9G72-ZLCw/UfirCZP-H_I/AAAAAAAAEOk/aqX_YHs6s6Q/s400/device-2013-07-31-113010.png)
